@@ -52,3 +52,8 @@
     font-size: 12px;
     margin-right: 10px;
 }
+@media only screen and (max-width: 600px){
+    .MoviePageDetails{
+        transform: translateY(190px);
+    }
+}

@@ -160,3 +160,11 @@
     background-color: royalblue;
     color: white;
 }
+
+@media only screen and (max-width: 600px){
+    :root {
+        --slider_padding: 2rem;
+        --slidesInView: 2;
+        --sliderIndex: 0;
+    }
+}

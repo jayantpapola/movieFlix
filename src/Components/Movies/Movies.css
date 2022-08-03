@@ -5,3 +5,12 @@
     width: 100%;
     z-index: 99;
 }
+@media only screen and (max-width: 600px) {
+    .Movies {
+            position: relative;
+            transform: translateY(350px);
+            height: 500px;
+            width: 100%;
+            z-index: 99;
+        }
+}

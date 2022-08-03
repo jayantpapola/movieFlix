@@ -1,9 +1,24 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './Banner.css'
 
 const Banner = ({banner, moreInfo}) => {
 
   const base_img_URL ="https://image.tmdb.org/t/p/original/"
+
+  const [bannerOverview, setBannerOverview] = useState()
+
+  useEffect(() => {
+  if(banner){
+    if(banner.overview.length > 200){
+      setBannerOverview(banner.overview.substring(0,200) + '...')
+    }
+    else{
+      setBannerOverview(banner.overview)
+    }
+  }
+  },[banner])
+  
+  
   
   return (
     <div className='Home__Banner'>
@@ -24,7 +39,7 @@ const Banner = ({banner, moreInfo}) => {
             More Info
           </button>}
         </div>
-        <p>{banner && banner.overview}</p>
+        <p>{bannerOverview}</p>
       </div>
     {banner && 
       <img className='Banner' src={`${base_img_URL}${banner.backdrop_path}`} alt="" />

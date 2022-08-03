@@ -66,3 +66,11 @@
      rgba(17, 17, 17, 0.8),
      rgba(17, 17, 17, 0));
 }
+
+@media only screen and (max-width: 600px){
+    .Banner__description>h1 {
+white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    }
+}

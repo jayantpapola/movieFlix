@@ -11,7 +11,6 @@ const Header = () => {
         else{
             setHeaderBg({backgroundColor:'transparent'})
         }
-        console.log(window.scrollY);
     })
     
 

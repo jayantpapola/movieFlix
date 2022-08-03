@@ -75,3 +75,8 @@
 .header__MyAccount__dropDown>p:hover{
     text-decoration: underline;
 }
+@media only screen and (max-width: 600px){
+   .Header__NavBar{
+    display: none;
+   }
+}
