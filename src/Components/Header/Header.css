@@ -1,0 +1,77 @@
+.Header{
+    position: fixed;
+    top: 0;
+    height: 80px;
+    background-color: transparent;
+    width: 100%;
+    display: flex;
+    z-index: 9999999;
+    transition: .6s;
+}
+.Header__Logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 200px;
+    color: white;
+    font-size: 50px;
+}
+.Header__Logo > img{
+    height: 60px;
+    width: max-content;
+}
+.Header__MyAccount{
+    position: relative;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 80px;
+    cursor: pointer;
+    transition: .5s;
+
+}
+.Header__MyAccount > img{
+    height: 50px;
+    width: max-content;
+}
+.Header__MyAccount:hover .header__MyAccount__dropDown{
+    display: block;
+}
+.header__MyAccount__dropDown{
+    display: none;
+    transform: translate(-40px,80px);
+    position: absolute;
+    padding: 10px 20px;
+    background-color: whitesmoke;
+    color: #111;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 3px;
+    min-width: 150px;
+}
+.Header__NavBar{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.Header__NavBar > p{
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-inline: 5px;
+    transition: .3s;
+}
+.Header__NavBar>p:hover{
+    background-color: white;
+    color: #111;
+}
+.header__MyAccount__dropDown > p{
+    margin: 10px;
+}
+.header__MyAccount__dropDown>p:hover{
+    text-decoration: underline;
+}

@@ -1,0 +1,54 @@
+.backToHome{
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    background-color: #111;
+    color: white;
+    letter-spacing: .5px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    z-index: 999;
+    cursor: pointer;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+.fa-arrow-left-long{
+    font-size: 0;
+    transition: .3s;
+}
+.backToHome:hover .fa-arrow-left-long{
+    margin-right: 10px;
+    font-size: 16px;
+}
+.MoviePageDetails{
+    padding: 50px;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+    color: white;
+    transform: translateY(-150px);
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+}
+.MoviePageDetails > p{
+    flex-grow: 1;
+    padding: 10px 20px;
+    width: max-content;
+    background-color: #333;
+    box-shadow: 0 0 10px #000;
+    border-radius: 10px;
+    margin: 10px;
+    transition: .3s;
+    cursor: pointer;
+}
+.MoviePageDetails>p:hover{
+    color: #111;
+    background-color: whitesmoke;
+}
+.MoviePageDetails>p>span{
+    font-size: 12px;
+    margin-right: 10px;
+}
